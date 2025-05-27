@@ -1,0 +1,58 @@
+server:
+  port: 8073
+
+spring:
+  application:
+    name: goods-manage-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/dmall?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC&characterEncoding=utf8
+    username: dmall
+    password: 1.2.
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+    type: com.zaxxer.hikari.HikariDataSource
+
+    hikari:
+      maximum-pool-size: 30
+      minimum-idle: 10
+      idle-timeout: 600000
+      connection-timeout: 30000
+      pool-name: MyHikariCP
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+
+app:
+  datasource:
+    jdbc-url: "jdbc:mysql://localhost/dmall"
+    username: "dmall"
+    password: "1.2."
+    pool-size: 30
+
+logging:
+  level:
+    root: "warn"
+    org.springframework.web: "info"
+    org.hibernate: "error"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+info:
+  app:
+    name: goods-manage-service
+    version: 1.0.0
