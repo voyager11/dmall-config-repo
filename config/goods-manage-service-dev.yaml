@@ -37,7 +37,7 @@ app:
   datasource:
     jdbc-url: "jdbc:mysql://localhost/dmall"
     username: "dmall"
-    password: "1.2."
+    password: {cipher}boSOsWYyBOd10nQygfmbgczzzA5Zymx8ZzLNZLmshz4wdI/CJMo9Bl5jjwQ/qnVgygtUEhFr4bS2ajTfHP3gHXCvZi0eJ6+HCy2LA+ToG4uGoeQw4yVsH1rZiOZtLYlCiz9NFm2gO02V3s2tBnCEHik2aDacd4EG2jViH3EEpfVEFJfcQk8b1uCZtsK35xT+aKpimAdRPBMOcpPkmPA7i6K1nqbJCFthCxExP6Q2+fm+b3q/FTTCSzQF9ZAc5goFkMuSMPWnjBYrHUuOqmIbxM+rw5SAE6KJvqG4ZfPXN7pUDHtdLFoFvBYlBYG19SQnzJDgU6UK9u2d6wPjjzih5g==
     pool-size: 30
 
 logging:
